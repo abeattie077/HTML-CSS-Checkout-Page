@@ -1,12 +1,51 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.page-colour {
+    background-color: RGB(239,239,239);
+    height: 100vh;
 }
 .site-title {
-    font-size: 100px;
-    font-weight: bold;
-    color: red;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 0x;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: RGB(219,210,167);
+    background-color: RGB(65, 41, 29);
+}
+
+.name{
+    padding: 10px;
+    background-color: RGB(236,224,213);
+    color: RGB(143,107,70);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    grid-area: name;
+}
+
+.items{
+    padding: 10px;
+    background-color: RGB(236,224,213);
+    color: RGB(143,107,70);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    grid-area: items;
+}
+
+.payment{
+    padding: 10px;
+    background-color: RGB(236,224,213);
+    color: RGB(143,107,70);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    grid-area: payment;
+}
+
+.checkout-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "items name"
+        ".     payment";
+    column-gap: 30px;
+    row-gap: 15px;
 }
